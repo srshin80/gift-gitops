@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gift-app-dev
+  namespace: argo
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:srshin80/gift-gitops.git
+    targetRevision: main
+    path: services/gift-app/overlays/dev
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: dev
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

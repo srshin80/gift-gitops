@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gift-app-prod
+  namespace: argo
+spec:
+  project: default
+  source:
+    repoURL: git@github.com:srshin80/gift-gitops.git
+    targetRevision: main
+    path: services/gift-app/overlays/prod
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: prod
+  syncPolicy: {}  # 수동 Sync

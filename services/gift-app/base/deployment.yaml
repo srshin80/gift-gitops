@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gift-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gift-app
+  template:
+    metadata:
+      labels:
+        app: gift-app
+    spec:
+      containers:
+      - name: app
+        image: srshin80/gift-app:latest
+        ports:
+        - containerPort: 3000
