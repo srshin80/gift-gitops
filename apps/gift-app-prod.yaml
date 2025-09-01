@@ -6,10 +6,10 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:srshin80/gift-gitops.git
+    repoURL: https://github.com/srshin80/gift-gitops.git
     targetRevision: main
     path: services/gift-app/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
-  syncPolicy: {}  # 수동 Sync
+  syncPolicy: {}
