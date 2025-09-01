@@ -11,4 +11,4 @@ patches:
 
 images:
   - name: srshin80/gift-app
-    newTag: "fixed-version"
+    newTag: "latest"
