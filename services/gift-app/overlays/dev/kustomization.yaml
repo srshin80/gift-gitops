@@ -12,4 +12,4 @@ patches:
 images:
 - name: srshin80/gift-app
   newName: srshin80/gift-app
-  newTag: "6"
+  newTag: "7"
