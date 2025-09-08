@@ -6,9 +6,11 @@ spec:
   template:
     spec:
       containers:
-      - name: app
-        env:
-        - name: ENV
-          value: "DEV"
-        - name: APP_VERSION
-          value: "dev-${BUILD_NUMBER}"
+        - name: app
+          env:
+            - name: ENV
+              value: "DEV"
+            - name: APP_VERSION
+              value: "dev-${BUILD_NUMBER}"
+            - name: APP_VERSION
+              value: dev-32
