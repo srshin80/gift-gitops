@@ -13,4 +13,4 @@ patchesStrategicMerge:
 images:
 - name: srshin80/gift-app
   newName: srshin80/gift-app
-  newTag: "25"
+  newTag: "31"
