@@ -8,5 +8,5 @@ spec:
       containers:
       - name: app
         env:
-          - name: ENV
-            value: "DEV"
+        - name: ENV
+          value: "DEV"
