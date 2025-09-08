@@ -17,3 +17,6 @@ spec:
         image: srshin80/gift-app:latest
         ports:
         - containerPort: 3000
+        env:   # 공통 env (없으면 빈 리스트라도 있어야 overlay patch 쉽게 가능)
+        - name: ENV
+          value: "default"
