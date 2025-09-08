@@ -12,4 +12,4 @@ patchesStrategicMerge:
 
 images:
   - name: srshin80/gift-app
-    newTag: "latest"
+    # prod는 Jenkins 'prod-rollout/rollback' 단계에서 set image로 덮어씀

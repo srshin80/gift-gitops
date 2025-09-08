@@ -1,9 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: gift-app   # base의 원래 이름(접두어 dev-는 자동)
+  name: gift-app
 spec:
   type: NodePort
+  selector:
+    app: gift-app
   ports:
     - port: 80
       targetPort: 3000
