@@ -9,6 +9,6 @@ spec:
         - name: app
           env:
             - name: ENV
-              value: "PROD"
+              value: latest
             - name: APP_VERSION
-              value: "32"
+              value: latest
