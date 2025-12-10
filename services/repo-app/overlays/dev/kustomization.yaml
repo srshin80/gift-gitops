@@ -14,3 +14,6 @@ images:
 - name: srshin80/gift-app
   newName: srshin80/gift-app
   newTag: "69"
+- name: srshin80/repo-app
+  newName: srshin80/repo-app
+  newTag: "75"
