@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gift-app
+  name: repo-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gift-app
+      app: repo-app
   template:
     metadata:
       labels:
-        app: gift-app
+        app: repo-app
     spec:
       containers:
       - name: app
-        image: srshin80/gift-app:latest
+        image: srshin80/repo-app:latest
         ports:
         - containerPort: 3000
         env:   # 공통 env (없으면 빈 리스트라도 있어야 overlay patch 쉽게 가능)
