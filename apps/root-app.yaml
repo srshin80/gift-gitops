@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/srshin80/gift-gitops.git
+    repoURL: https://github.com/srshin80/repo-config.git
     targetRevision: main
     path: apps
   destination:

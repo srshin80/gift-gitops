@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: gift-app-prod
+  name: repo-app-prod
   namespace: argo
 spec:
   project: default
   source:
-    repoURL: https://github.com/srshin80/gift-gitops.git
+    repoURL: https://github.com/srshin80/repo-config.git
     targetRevision: main
-    path: services/gift-app/overlays/prod
+    path: services/repo-app/overlays/prod
   destination:
     server: https://kubernetes.default.svc
     namespace: prod
