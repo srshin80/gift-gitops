@@ -13,4 +13,4 @@ patchesStrategicMerge:
 images:
 - name: srshin80/repo-app
   newName: srshin80/repo-app
-  newTag: "83"
+  newTag: 44cdb28
